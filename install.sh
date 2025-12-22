@@ -1,6 +1,10 @@
 #!/usr/bin/env bash
 set -e
 
+# ================================
+# Dotfiles Installer
+# ================================
+
 DOTFILES="$HOME/Documents/dotfiles"
 OS="$(uname -s)"
 IS_WSL=false
@@ -43,11 +47,13 @@ fi
 # ----------------
 # Optional: Symlink other configs
 # ----------------
+# echo "Linking Powerlevel10k..."
 # ln -sf "$DOTFILES/zsh/.p10k.zsh" "$HOME/.p10k.zsh"
+# echo "Linking Vim..."
 # ln -sf "$DOTFILES/vim/.vimrc" "$HOME/.vimrc"
 
 # ----------------
-# Optional: Install plugins/tools
+# Optional: Install tools / plugins
 # ----------------
 # echo "Installing Oh-My-Zsh..."
 # sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"

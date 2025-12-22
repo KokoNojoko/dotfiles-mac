@@ -1,27 +1,15 @@
-# ================================
-# macOS system files
+ system files
 # ================================
 .DS_Store
-.AppleDouble
-.LSOverride
-Icon?
-._*
-.Spotlight-V100/
 .Trashes
-*.swp
-*.swo
 
 # ================================
-# Powerlevel10k cache
+# Cache / temp files
 # ================================
 .cache/
 *.zwc
 *.zwc.*
 p10k-dump-*.zsh
-
-# ================================
-# Ghostty runtime / temp files
-# ================================
 *.log
 *.tmp
 *.lock
@@ -33,6 +21,9 @@ p10k-dump-*.zsh
 .idea/
 *.sublime-workspace
 *.sublime-project
+*.swp
+*.bak
+*.old
 
 # ================================
 # Node / language-specific
@@ -44,10 +35,21 @@ __pycache__/
 *.out
 
 # ================================
-# Misc personal stuff you don't want
+# Shell / terminal
 # ================================
-*.swp
-*.bak
-*.tmp
-*.old
+.zsh_history
+.zsh_sessions
+.zcompdump*
+.oh-my-zsh/cache/
+
+# ================================
+# Editor / plugin caches
+# ================================
+.vim/
+.viminfo/
+
+# ================================
+# Misc personal stuff
+# ================================
+~  # backup files
 
